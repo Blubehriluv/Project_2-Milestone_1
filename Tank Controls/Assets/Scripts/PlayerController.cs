@@ -6,13 +6,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public float speed;
-    public float reverseSpeed;
-    public float turnSpeed = 150;
+    public float speed = 5;
+    public float reverseSpeed = 2;
+    public float turnSpeed = 200;
     private Rigidbody2D rb;
     private Transform tf;
     private float angle = 0.0f;
-    public float force;
+    public float force = 10;
 
     // Use this for initialization
     void Start()
