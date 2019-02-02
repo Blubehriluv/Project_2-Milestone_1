@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/taymcken/Documents/Project_2-Milestone_1/Tank Controls/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
