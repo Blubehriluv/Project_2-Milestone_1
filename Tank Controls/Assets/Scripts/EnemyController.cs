@@ -16,7 +16,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //if (goUp == true) ;
         tf.position = tf.position + (Vector3.up * speed);
     }
 }
