@@ -6,12 +6,11 @@ public class EnemyManager : MonoBehaviour
 {
     //public PlayerHealth playerHealth;       // Reference to the player's heatlh.
     public GameObject Enemy;                // The enemy prefab to be spawned.
-    public float spawnTime = 7f;            // How long between each spawn.
+    public float spawnTime = Random.Range(2, 7);            // How long between each spawn.
     //public Transform[] spawnPoints;         // An array of the spawn points this enemy can spawn from.
     //public Vector3 spawnPoint;
     private int spawnPointX;
     private int spawnPointY;
-    //public bool goDown, goUp, goLeft, goRight = false;
 
 
     void Start()
@@ -37,34 +36,30 @@ public class EnemyManager : MonoBehaviour
 
         if (whichPoint == 0)
         {
-            spawnPointX = 0;
+            spawnPointX = 4;
             spawnPointY = -12;
-            goUp = true;
 
         }
 
         if (whichPoint == 1)
         {
             //spawnPoint = new Vector3(0, 12, 0);
-            spawnPointX = 0;
+            spawnPointX = -4;
             spawnPointY = 12;
-            goDown = true;
         }
 
         if (whichPoint == 2)
         {
             //spawnPoint = new Vector3(-12, 0, 0);
             spawnPointX = -12;
-            spawnPointY = 0;
-            goLeft = true;
+            spawnPointY = -4;
         }
 
         if (whichPoint == 3)
         {
             //spawnPoint = new Vector3(12, 0, 0);
             spawnPointX = 12;
-            spawnPointY = 0;
-            goRight = true;
+            spawnPointY = 4;
         }
         Vector3 spawnPoint = new Vector3(spawnPointX, spawnPointY, 0);
 
